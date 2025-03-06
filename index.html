@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>R.K. Home Appliances</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+            <a class="navbar-brand" href="#">R.K. HOME APPLIANCES</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#shop" id="shopDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Shop
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="shopDropdown">
+                            <li><a class="dropdown-item" href="#furniture">Furniture</a></li>
+                            <li><a class="dropdown-item" href="#electronics">Electronics</a></li>
+                            <li><a class="dropdown-item" href="#kitchen">Kitchen</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="dashboard.php" >
+                            <i class="fas fa-user-circle profile-icon"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item position-relative">
+                        <a class="nav-link" href="cart.php">
+                            <i class="fas fa-shopping-cart fa-lg"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    
+    </nav>
+
+
+
+
+    <div id="carousel" class="carousel slide ">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="image\furniture.jpeg" class="carousel-img w-100 image-hover" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="image\TV.jpeg" class="carousel-img w-100 image-hover" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="image\washing machine.jpeg" class="carousel-img w-100 image-hover" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+<br>
+    <section id="topdeals">
+            <h2 class="text-center">Top Deals</h2>
+            <div class="row mt-4">
+
+                <div class="col-md-3">
+                    <div class="product-card position-relative">
+                        <span class="discount-badge">34% OFF</span>
+                        <img src="image\img2.jpeg" alt="Classic Brown & Beige Sofa" class="product-image">
+                        <h5>Classic Brown & Beige Sofa</h5>
+                        <p><strong>Price: ₹65,499</strong> <small class="text-muted"><del>₹99,999</del></small></p>
+                        <p>Stylish L-shaped sofa with a brown & beige color blend for modern interiors.</p>
+                        <button class="btn" onclick="addToCart(103,'Classic Brown & Beige Sofa', 65499)">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="product-card position-relative">
+                        <span class="discount-badge">30% OFF</span>
+                        <img src="image\airfryer.jpeg" alt="Crompton Air Fryer" class="product-image">
+                        <h5>Crompton Air Fryer</h5>
+                        <p><strong>Price: ₹5,990 </strong> <small class="text-muted"><del>₹10,800</del></small></p>
+                        <p>Non stick basket and removable food rack 2 knobs for temperature and timer control.</p>
+                        <button class="btn" onclick="addToCart(101,'Kent Water Purifier', 5990)">Buy Now</button>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3">
+                    <div class="product-card position-relative">
+                        <span class="discount-badge">29% OFF</span>
+                        <img src="image\dining-1.jpeg" alt="Marble-Top Black Dining Set" class="product-image">
+                        <h5>Marble-Top Black Dining Set</h5>
+                        <p><strong>Price: ₹64,989 </strong> <small class="text-muted"><del>₹91,999</del></small></p>
+                        <p>Modern 6-seater dining set with a marble-top table and cushioned chairs.</p>
+                        <button class="btn" onclick="addToCart(102,'Marble-Top Black Dining Set', 64989)">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="product-card position-relative">
+                        <span class="discount-badge">18% OFF</span>
+                        <img src="image\microwave.jpeg" alt="Haier Microwave Oven" class="product-image">
+                        <h5>Haier Microwave Oven</h5>
+                        <p><strong>Price: ₹15,499</strong> <small class="text-muted"><del>₹18,999</del></small></p>
+                        <p>Can be used for baking along with grilling, reheating, defrosting and cooking.</p>
+                        <button class="btn" onclick="addToCart(104,'Haier Microwave Oven', 15499)">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+
+    <br>
+    <hr><br>
+
+    <section id="shop">
+
+        <section id="furniture">
+            <h2 class="text-center">Furnitures</h2>
+            <div class="row mt-4">
+
+                <div class="col-md-3">
+                    <div class="product-card position-relative">
+                        <img src="image\img1.jpeg" alt="Luxury Brown L-Shaped Sofa" class="product-image">
+                        <h5>Luxury Brown L-Shaped Sofa</h5>
+                        <p><strong>Price: ₹36,999 </strong>
+                        <p>.Premium velvet finish, plush comfort, and a sturdy wooden frame.</p>
+                        <button class="btn" onclick="addToCart(105,'Luxury Brown L-Shaped Sofa', 36999)">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="product-card position-relative">
+                        <img src="image\dining-3.jpeg" alt="Contemporary Marble Dining Set" class="product-image">
+                        <h5>Contemporary Marble Dining Set</h5>
+                        <p><strong>Price: ₹64,999</strong>
+                        <p>Modern marble-top dining table with upholstered chairs for extra comfort.</p>
+                        <button class="btn" onclick="addToCart(110,'Contemporary Marble Dining Set', 64999)">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="product-card position-relative">
+                        <img src="image\img3.jpeg" alt="Premium Leather Sofa" class="product-image">
+                        <h5>Premium Leather Sofa</h5>
+                        <p><strong>Price: ₹75,499</strong>
+                        <p>Luxurious leather finish with high-density foam cushions.</p>
+                        <button class="btn" onclick="addToCart(109,'Premium Leather Sofa', 75499)">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="product-card position-relative">
+                        <img src="image\dining-2.jpeg" alt="Marble-Top Beige Dining Set" class="product-image">
+                        <h5>Marble-Top Beige Dining Set</h5>
+                        <p><strong>Price: ₹78,999</strong>
+                        <p>Elegant dining table set with a marble-finish tabletop and beige cushioned chairs.</p>
+                        <button class="btn" onclick="addToCart(108,'Marble-Top Beige Dining Set', 78999)">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <hr><br>
+        <section id="electronics">
+            <h2 class="text-center">Electronics</h2>
+            <div class="row mt-4">
+                <div class="col-md-3">
+                    <div class="product-card position-relative">
+                        <img src="image\tv1.jpeg" alt="SAMSUNG Full HD LED TV" class="product-image">
+                        <h5>SAMSUNG Full HD LED TV</h5>
+                        <p><strong>Price: ₹35,499</strong>
+                        <p>WebOS 23 with User Profiles and Filmmaker Mode, HDR 10 & HLG.</p>
+                        <button class="btn" onclick="addToCart(106,'SAMSUNG Full HD LED TV', 35499)">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="product-card position-relative">
+                        <img src="image\washingmachine.jpeg" alt="LG Washing Machine" class="product-image">
+                        <h5>LG Washing Machine </h5>
+                        <p><strong>Price: ₹67,890</strong>
+                        <p>Washer and Dryer in One LG’s all-in-one washer and dryer.</p>
+                        <button class="btn" onclick="addToCart(107,'LG Washing Machine', 67890)">Buy Now</button>
+                    </div>
+                </div>
+
+                    <div class="col-md-3">
+                        <div class="product-card position-relative">
+                            
+                            <img src="image\ac.jpeg" alt="LG 3 Star AC" class="product-image">
+                            <h5>LG 3 Star AC</h5>
+                            <p><strong>Price: ₹75,499</strong> </p>
+                            <p>DUAL Inverter Compressor and AI Convertible 6-in-1 Coolinge</p>
+                            <button class="btn" onclick="addToCart(111,'LG 3 Star AC', 75499)">Buy Now</button>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-3">
+                        <div class="product-card position-relative">
+                            <img src="image\fridge.jpeg" alt="Samsung Double Door Refrigerator" class="product-image">
+                            <h5>Samsung Double Door Refrigerator</h5>
+                            <p><strong>Price: ₹24,990</strong></small></p>
+                            <p>A perfect combination of efficiency, spacious storage, and elegant design.</p>
+                            <button class="btn" onclick="addToCart(112,'Samsung Double Door Refrigerator', 24990)">Buy Now</button>
+                        </div>
+                    </div>
+    
+            </div>
+
+        </section>
+        <br>
+        <hr><br>
+        <section id="kitchen">
+            <h2 class="text-center">Kitchen</h2>
+            <div class="row mt-4">
+            <div class="col-md-3">
+                <div class="product-card position-relative">
+                    <img src="image\ro.jpeg" alt="Kent Water Purifier" class="product-image">
+                    <h5>Kent Water Purifier</h5>
+                    <p><strong>Price: ₹13,500 </strong> </p>
+                    <p>Ideal for purification of brackish/tap water/municipal corporation water supply.</p>
+                    <button class="btn" onclick="addToCart(113,'Kent Water Purifier', 13500)">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="product-card position-relative">
+                    <img src="image\microwave.jpeg" alt="Haier Microwave Oven" class="product-image">
+                    <h5>Haier Microwave Oven</h5>
+                    <p><strong>Price: ₹15,499</strong> </p>
+                    <p>Can be used for baking along with grilling, reheating, defrosting and cooking.</p>
+                    <button class="btn" onclick="addToCart(114,'Haier Microwave Oven', 15499)">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="product-card position-relative">
+                    <img src="image\airfryer.jpeg" alt="Crompton Air Fryer" class="product-image">
+                    <h5>Crompton Air Fryer</h5>
+                    <p><strong>Price: ₹5,990</strong> </p>
+                    <p>Non stick basket and removable food rack 2 knobs for temperature and timer control.</p>
+                    <button class="btn" onclick="addToCart(115,'Crompton Air Fryer', 5990)">Buy Now</button>
+                </div>
+            </div>
+            
+            <div class="col-md-3">
+                <div class="product-card position-relative">
+                    <img src="image\grinder.jpeg" alt="Bajaj Mixer Grinder" class="product-image">
+                    <h5>Bajaj Mixer Grinder</h5>
+                    <p><strong>Price: ₹13,500 </strong> </p>
+                    <p>Table Top Mixer Grinder with Bi-Directional Grinding Technology (Pink).</p>
+                    <button class="btn" onclick="addToCart(116,'Bajaj Mixer Grinder', 13500)">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        </section>
+    </section>
+
+    <br><hr><br>
+
+    <section id="about">
+        <div class="row align-items-center">
+            <!-- Left Side: Text Content -->
+            <div class="col-md-7">
+            <div class="container">
+                <h2 class="text-center">About Us</h2><br>
+                <p>
+                    Established in 2005, <strong>RK Home Appliances</strong> has been a trusted name in providing high-quality home appliances tailored to meet modern household needs. Founded by <strong>Pawan HR</strong>, our mission is to deliver innovative, durable, and affordable appliances that enhance everyday living.
+                    <br>
+                    <div class="text-center">
+                    <strong>For inquiries, feel free to contact us:</strong><br>
+                    📧 <strong>Email:</strong> contact@rkhomeappliances.com<br>
+                    📞 <strong>Phone:</strong> +91 79426 88594<br>
+                    📍 <strong>Address:</strong> No 42/1, Dadanapura Hobli, Lakshmipura Main Road, Opp. Almond Bakery, Madanayakanahalli, Bangalore North, Bangalore - 562123
+                </div><br>
+                With a commitment to excellence, we ensure customer satisfaction through our top-notch products and reliable service. Our store, located in <strong>Madanayakanahalli, Bangalore</strong>, is a <u>one-stop destination</u> for all your home appliance needs.
+                    <br></p>
+        </div>                
+        </div>
+
+            <!-- Right Side: Image -->
+            <div class="col-md-5 text-center">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.6067521592167!2d77.45854337539285!3d13.060684887262987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae25b5d1d3a405%3A0x3a573c5e25a5a5a1!2sR.K%20Home%20Appliances!5e0!3m2!1sen!2sin!4v1741118768423!5m2!1sen!2sin" 
+                width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer mt-5">
+
+        <div class="row">
+
+            <div class="col-md-4">
+                <h5>Contact Us</h5>
+                <p>Email: contact@rkhomeappliances.com<br>
+                    Phone: +91 79426 88594</p>
+            </div>
+
+            <div class="col-md-4">
+                <h5>Address</h5>
+                <p>No 42/1, Dadanapura Hobli, Lakshmipura Main Road<br>
+                    Opp. Almond Bakery,Madanayakanahalli<br>
+                    Bangalore North, Bangalore - 562123</p>
+
+            </div>
+
+            <div class="col-md-4">
+                <h5>Follow Us</h5>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function validateLogin() {
+            let email = document.getElementById("email").value.trim();
+            let password = document.getElementById("password").value.trim();
+            let message = document.getElementById("message");
+
+            if (!email || !password) {
+                message.textContent = "All fields are required!";
+                return false;
+            }
+
+            let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                message.textContent = "Invalid email format!";
+                return false;
+            }
+
+            return true;
+        }
+    
+    
+function addToCart(productId, productName, price) {
+    // Check if user is logged in before adding to cart
+    fetch("check_login.php")
+    .then(response => response.json())
+    .then(data => {
+        if (!data.logged_in) {
+            alert("You must log in to add items to your cart!");
+            window.location.href = "login.html";
+            return;
+        }
+
+        // Proceed with adding to cart
+        let formData = new FormData();
+        formData.append("product_id", productId);
+        formData.append("product_name", productName);
+        formData.append("price", price);
+
+        fetch("add_to_cart.php", {
+            method: "POST",
+            body: formData
+        })
+        .then(response => response.text())
+        .then(result => {
+            alert(result); // Show success message
+        })
+        .catch(error => console.error("Error:", error));
+    });
+}
+
+    </script>  
+</div>  
+</body>
+
+</html>
