@@ -8,12 +8,6 @@ This is a fully functional e-commerce web application built for R K Home Applian
 - Backend: PHP  
 - Database: MySQL  
 
-## Setup Instructions  
-1. Import `rkdatabase.sql` into your MySQL server to set up the database.  
-2. Update database connection credentials in `db_connect.php`.  
-3. Place the project files on a PHP-enabled web server (e.g., XAMPP).  
-4. Access the app via your browser (e.g., `http://localhost/path-to-project/index.html`).
-
 ## Live Demo  
 View the deployed version here: [rkhome.byethost3.com](https://rkhome.byethost3.com)
 
